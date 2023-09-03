@@ -134,6 +134,18 @@ footer {
 /* Responsive Desktop */
 
 @media(max-width: 500px){
+    /*----- Main-----*/
+    main {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    .description {
+        color: #422936;
+        font-size: 12px;
+    }
+    .button-gp {
+        width: 100px;
+    }
     /*----- Footer -----*/
     footer {
         margin: 0;
