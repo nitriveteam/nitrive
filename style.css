@@ -134,12 +134,23 @@ footer {
 /* Responsive Desktop */
 
 @media(max-width: 500px){
+    /*----- Footer -----*/
     footer {
         margin: 0;
-        padding: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
-    .nav-list {
-        display: none;
+    .site-map ul {
+        font-size: 12px;
+    }
+    .site-map ul li:hover {
+        color: #ffe4c2;
+    }
+    .m-logo {
+        width: 80px;
+    }
+    .copyright {
+        font-size: 12px;
     }
 }
 
