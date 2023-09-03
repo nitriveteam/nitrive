@@ -90,9 +90,7 @@ footer {
     justify-content: center;
     width: 100%;
 }
-.m-logo{
-    width: 100px;
-}
+
 
 .copyright {
     color: #dca456;
@@ -148,6 +146,25 @@ footer {
 /* Mobile */
 
 @media(max-width: 300px){
+    /*----- Main-----*/
+    main {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    .description {
+        color: #422936;
+        font-size: 10px;
+    }
+    .button-gp {
+        width: 100px;
+    }
+
+
+
+    /*----- Footer -----*/
+    footer {
+        padding-bottom: 10px;
+    }
     .site-map ul {
         font-size: 10px;
     }
