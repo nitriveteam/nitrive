@@ -14,5 +14,62 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: aliceblue;
+    background-color: white;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+header .navigation a {
+    color: #dca456;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background-color;
+}
+header .navigation a:not(:last-child){
+    margin-right: 30px;
+} 
+header .navigation a:hover {
+    background-color: #ffe6c5;
+}
+
+.content {
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: 0.3s;
+    transition-property: transform;
+
+}
+.media-icons a {
+    position: relative;
+    color: #dca456;
+    font-size: 25px;
+}
+.media-icons a:not(:last-child) {
+    margin-right: 60px;
+}
+.media-icons a:hover {
+    transform: scale(1.5);
 }
