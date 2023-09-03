@@ -1,13 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* RESET */
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family:'Poppins', sans-serif;
 }
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #422936;
+}
 
-section {
+a {
+    text-decoration: none;
+    color: #dca456;
+}
+a:hover {
+    color:  #dca456;
+    background-color: #422936;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+body {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -16,45 +35,29 @@ section {
     background-color: #dca456;
 }
 
-header {
-    position: relative;
-    top: 0;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ffe6c5;
-}
-
 .logo {
-    width: 200px;
+    width: 150px;
 }
 
-header .navigation a {
-    color: #dca456;
-    text-decoration: none;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding: 2px 15px;
-    border-radius: 20px;
-    transition: 0.3s;
-    transition-property: background-color;
-}
-header .navigation a:not(:last-child){
-    margin-right: 30px;
-} 
-header .navigation a:hover {
-    background-color: #ffe6c5;
-}
+
 
 .banner {
-    background-image: url("assets/images/bg.png");
+    display: flex;
+    position: relative;
+    justify-content: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     margin: 0;
-    height: 500px;
+    height: auto;
 }
+.img-banner {
+    width: 100%;
+}
+
+.description {
+    margin: 10px 50px;
+}
+
 .banner-links {
     position: relative;
     display: flex;
@@ -77,7 +80,7 @@ header .navigation a:hover {
 }
 .media-icons a {
     position: relative;
-    color: #dca456;
+    color: white;
     font-size: 25px;
 }
 .media-icons a:not(:last-child) {
@@ -95,6 +98,12 @@ label {
 }
 
 /* Responsive Desktop */
+
+@media (max-width: 180px){
+    .logo {
+        height: 50px;
+    }
+}
 
 @media (max-width: 960px){
     header .navigation{
