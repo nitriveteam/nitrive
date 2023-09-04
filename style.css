@@ -2,8 +2,6 @@
 
 /* RESET */
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -30,9 +28,16 @@ p {
     padding: 10px;
 }
 
-nav {
+header{
+    background-color: #ffe4c2;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+nav {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: left;
     align-items: center;
     height: 10vh;
     background-color: #ffe4c2
@@ -63,6 +68,7 @@ ul {
 /************** HEADER ****************/
 
 .logo {
+    padding: 0px 10px;
     width: 150px;
 }
 
@@ -82,7 +88,7 @@ ul {
 }
 
 main {
-    height: auto;
+    min-height: 100vh;
 }
 
 /************** FOOTER ****************/
@@ -186,21 +192,18 @@ footer {
 /* Responsive Desktop */
 
 .main-container {
-    max-width: 1000px;
-    min-height: 600px;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
     background-color: #ffe4c2;
+}
+.container {
+    max-width: 1000px;
 }
 
 
 @media(max-width: 500px){
     body {
         height: 100%;
-    }
-    /*----- Main-----*/
-    main {
-        min-height: auto;
-        padding-bottom: 50px;
     }
     .description {
         padding-left: 20px;
@@ -238,11 +241,6 @@ footer {
 /* Mobile */
 
 @media(max-width: 300px){
-    /*----- Main-----*/
-    main {
-        min-height: auto;
-        padding-bottom: 50px;
-    }
     .description {
         color: #422936;
         font-size: 10px;

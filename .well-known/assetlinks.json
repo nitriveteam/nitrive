@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.nitrive.loufe",
+        "sha256_cert_fingerprints": [
+          "DA:3F:A8:C9:9F:6E:67:25:71:B6:AC:5C:7D:71:56:8A:24:35:C8:EA:8C:67:A1:95:D2:C7:2C:50:3E:50:81:F1"
+        ]
+      }
+    }
+  ]
