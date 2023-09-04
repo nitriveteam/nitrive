@@ -158,6 +158,9 @@ footer {
 /* Responsive Desktop */
 
 @media(max-width: 500px){
+    body {
+        height: 100%;
+    }
     /*----- Main-----*/
     main {
         min-height: auto;
