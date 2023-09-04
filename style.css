@@ -2,11 +2,34 @@
 
 /* RESET */
 
+
+
 *{
     margin: 0;
     padding: 0;
     font-family:'Poppins', sans-serif;
 }
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #dca456;
+    padding: 10px;
+    text-align: center;
+}
+h2 {
+    color: #dca456;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 32;
+}
+h3 {
+    color: #422936;
+}
+p {
+    color: #422936;
+    padding: 10px;
+}
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -28,8 +51,13 @@ a:hover {
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
     background-size: cover;
     background-color: #dca456;
+}
+
+ul {
+    padding: 3px 50px;
 }
 
 /************** HEADER ****************/
@@ -39,7 +67,7 @@ body {
 }
 
 .nav-list {
-    display: flex;
+    display: none;
     list-style: none;
 }
 .nav-list li {
@@ -156,6 +184,14 @@ footer {
 }
 
 /* Responsive Desktop */
+
+.main-container {
+    max-width: 1000px;
+    min-height: 600px;
+    padding: 50px;
+    background-color: #ffe4c2;
+}
+
 
 @media(max-width: 500px){
     body {
