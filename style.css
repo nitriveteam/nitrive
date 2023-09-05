@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: Adelle Sans;
+    src: url(assets/font/adellesans/AdelleSansBasic-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Metric';
+    src: url('assets/font/metric/MetricBold.woff2');
+    font-weight: bold;
+}
+
 /* RESET */
 
 *{
@@ -7,17 +18,22 @@
     padding: 0;
     font-family:'Poppins', sans-serif;
 }
+small {
+    font-size: max(12px, 1vw);
+    font-family: Adelle Sans;
+    font-style: normal;
+}
 h1 {
     font-size: 36px;
     text-transform: uppercase;
     color: #dca456;
-    padding: 10px;
+    padding: 1vw;
     text-align: center;
 }
 h2 {
     color: #dca456;
     text-transform: uppercase;
-    padding: 5px;
+    padding: 0.8vw;
     font-size: 32;
 }
 h3 {
@@ -25,7 +41,11 @@ h3 {
 }
 p {
     color: #422936;
-    padding: 10px;
+    font-size: max(16px, 1.5vw);
+    padding: 0.3vw;
+}
+p {
+    font-size: max(16px, 2vw);
 }
 
 header{
@@ -40,7 +60,8 @@ nav {
     justify-content: left;
     align-items: center;
     height: 10vh;
-    background-color: #ffe4c2
+    padding: 0vh 2vh;
+    background-color: transparent
 
 }
 
@@ -56,20 +77,18 @@ a:hover {
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100vh;
     background-size: cover;
-    background-color: #dca456;
-}
-
-ul {
-    padding: 3px 50px;
+    background-color: #ffe4c2;
 }
 
 /************** HEADER ****************/
 
 .logo {
-    padding: 0px 10px;
-    width: 150px;
+    min-width: 30vw;
+    max-height: 8vh;
+    width: 100%;
+    width: min(250px, 1vh);
 }
 
 .nav-list {
@@ -88,13 +107,15 @@ ul {
 }
 
 main {
-    min-height: 100vh;
+    padding-bottom: 5vh;
+    background-color: #dca456;
 }
 
 /************** FOOTER ****************/
 footer {
     position: relative;
     width: 100%;
+    min-width: 300px;
     display: block;
     align-items: center;
     align-content: center;
@@ -102,8 +123,13 @@ footer {
     padding-bottom: 10px;
     background-color: #422936;
 }
+
+/* ===================================== SITEMAP ===================================== */
 .site-map {
-    font-size: small;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-family: 'Metric';
+    font-weight: bold;
     text-transform: uppercase;
     align-items: center;
 }
@@ -113,24 +139,36 @@ footer {
     justify-content: center;
 }
 .site-map ul li {
-    padding: 5px;
+    font-size: max(12px, 1.3vw);
+    color: #dca456;
+    text-shadow: #0000008a 2px 3px 2px;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
+.site-map ul li a:hover {
+    text-shadow: none;
+    color: #ffe4c2;
+}
+/* ===================================== SITEMAP ===================================== */
 
 .footer-logo{
-    padding-bottom: 10px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
 
-
+/* ==================================== COPIRIGHT ==================================== */
 .copyright {
-    color: #dca456;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    padding: 0;
+    color: #ffe4c26b;
     text-align: center;
-    font-size: smaller;
 }
-
+/* ==================================== COPIRIGHT ==================================== */
 
 
 
@@ -152,12 +190,11 @@ footer {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-bottom: 2vw;
 }
 .description p {
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 16px;
     width: 800px;
 }
 
@@ -165,17 +202,13 @@ footer {
     position: relative;
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
 }
 .button-gp {
-    width: 200px;
+    width: max(250px, 2vw);
 }
 
 
 
-footer {
-    padding-bottom: 10px;
-}
 .site-map ul {
     font-size: 14px;
 }
@@ -185,9 +218,7 @@ footer {
 .m-logo {
     width: 100px;
 }
-.copyright {
-    font-size: 14px;
-}
+
 
 /* Responsive Desktop */
 
@@ -199,72 +230,24 @@ footer {
 .container {
     max-width: 1000px;
 }
-
-
-@media(max-width: 500px){
-    body {
-        height: 100%;
-    }
-    .description {
-        padding-left: 20px;
-        padding-right: 20px;
-        color: #422936;
-        font-size: 12px;
-    }
-    .description p {
-        font-size: 14px;
-        width: 800px;
-    }
-    .button-gp {
-        width: 100px;
-    }
-    /*----- Footer -----*/
-    footer {
-        margin: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .site-map ul {
-        font-size: 12px;
-    }
-    .site-map ul li:hover {
-        color: #ffe4c2;
-    }
-    .m-logo {
-        width: 80px;
-    }
-    .copyright {
-        font-size: 12px;
-    }
+.social-media {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    cursor: pointer;
+    letter-spacing: 25px;
+    color: #dca456;
+    display: flex;
+    justify-content: center;
+    font-size: min(100px, 20vw);
+}
+.social-media i:hover {
+    color: #ffe4c2;
 }
 
-/* Mobile */
-
-@media(max-width: 300px){
-    .description {
-        color: #422936;
-        font-size: 10px;
-    }
-    .button-gp {
-        width: 100px;
-    }
-
-
-
-    /*----- Footer -----*/
-    footer {
-        padding-bottom: 10px;
-    }
+@media(max-width: 500px) {
     .site-map ul {
-        font-size: 10px;
-    }
-    .site-map ul li:hover {
-        color: #ffe4c2;
-    }
-    .m-logo {
-        width: 50px;
-    }
-    .copyright {
-        font-size: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
